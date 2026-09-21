@@ -4,3 +4,47 @@ body{
     padding: 0;
 }
 
+header nav{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 2em;
+    position: sticky;
+    top: 0;
+}
+
+header nav img#logo{
+    height: 50px;
+}
+
+header nav ul#main-navigation{
+    display: flex;
+    list-style: none;
+    gap: 6em;
+    align-items: center;
+}
+
+header nav ul#main-navigation li a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+header nav ul#main-navigation li a:hover{
+    color: gray;
+}
+
+header nav ul#user-navigation{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav ul#user-navigation li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
