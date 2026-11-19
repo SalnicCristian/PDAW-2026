@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EngineSoft.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="images/EngineSoft.png" alt="Enginesoft Logo"></a>
+
+            <div class="navigation_bar">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="search_box">
+                <form class="search_bar"><input placeholder="Search..."></form>
+                <button class="search_button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z" />
+                    </svg></button>
+            </div>
+
+            <div class="navigation_icons">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="hero">
+            <div id="popup">
+                <div class="title">Find your potential.</div>
+                <br>
+                <div class="subtitle">Explore hundreds of engines to unleash your dreams.</div>
+                <br>
+                <button class="button">Get Started</button>
+            </div>
+
+            <div class="slider">
+                <div class="slide active">
+                    <img src="images/unity.png" alt="Unity logo">
+                    <p>Unity</p>
+                </div>
+                <div class="slide">
+                    <img src="images/unreal.png" alt="Unreal Engine logo">
+                    <p>Unreal Engine</p>
+                </div>
+                <div class="slide">
+                    <img src="images/godot.png" alt="Godot logo">
+                    <p>Godot</p>
+                </div>
+                <div class="slide">
+                    <img src="images/gamemaker.jpg" alt="GameMaker logo">
+                    <p>GameMaker</p>
+                </div>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+        <section id="engines">
+            <p class="section_titles">Popular engines</p>
+            <p class="section_text">Three engines most beginners start with.</p>
+            <table class="engine_table">
+                <thead>
+                    <tr>
+                        <th>Game engine</th>
+                        <th>Explanation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Unity</td>
+                        <td>A flexible engine for 2D and 3D games, programmed in C#. Great for mobile games and
+                            small teams, with a large asset store and plenty of tutorials to learn from.
+                            <a href="#">Read more</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Unreal Engine</td>
+                        <td>Known for realistic graphics and powerful lighting. You can build with C++ or its
+                            visual scripting system, Blueprints. Used for big console and PC games.
+                            <a href="#">Read more</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Godot</td>
+                        <td>Free and open source. Light on your computer, easy to pick up, and it comes with its
+                            own beginner-friendly language, GDScript. Works well for both 2D and 3D games.
+                            <a href="#">Read more</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="games">
+            <p class="section_titles">Games made with them</p>
+            <p class="section_text">See what developers have built with each engine.</p>
+            <div class="game_row">
+                <div class="game">
+                    <img src="images/hollow.jpg" alt="Hollow Knight screenshot">
+                    <div>
+                        <p>Hollow Knight</p>
+                        <p>Made with Unity</p>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="images/fortnite.jpg" alt="Fortnite screenshot">
+                    <div>
+                        <p>Fortnite</p>
+                        <p>Made with Unreal Engine</p>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="images/soniccolors.png" alt="Sonic Colors Ultimate screenshot">
+                    <div>
+                        <p>Sonic Colors Ultimate</p>
+                        <p>Made with Godot</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why">
+            <p class="section_titles">Why use an engine?</p>
+            <div class="why_row">
+                <div class="why_item">
+                    <p class="why_title">Less to build</p>
+                    <p>Physics, lighting and sound are already done, so you can focus on your game.</p>
+                </div>
+                <div class="why_item">
+                    <p class="why_title">Many platforms</p>
+                    <p>Make a game once and export it to PC, consoles and phones.</p>
+                </div>
+                <div class="why_item">
+                    <p class="why_title">Help is easy to find</p>
+                    <p>Every big engine has tutorials, assets and people who answer questions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="visit">
+            <p class="section_titles">Discuss the engines</p>
+            <p class="section_text">Ask in the forum and see what other developers use.</p>
+            <button class="button">Visit the Forum</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_top">
+            <a href="#"><img src="images/EngineSoft.png" alt="Enginesoft Logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <p class="copyright">&copy; 2026 EngineSoft.com. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+        let current = 0;
+
+        function showSlide(n) {
+            slides[current].classList.remove("active");
+            dots[current].classList.remove("active");
+            current = n;
+            slides[current].classList.add("active");
+            dots[current].classList.add("active");
+        }
+
+        let timer = setInterval(() => showSlide((current + 1) % slides.length), 3500);
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener("click", () => {
+                clearInterval(timer);
+                showSlide(i);
+                timer = setInterval(() => showSlide((current + 1) % slides.length), 3500);
+            });
+        });
+    </script>
+</body>
+
+</html>

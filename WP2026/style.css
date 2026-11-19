@@ -1,0 +1,529 @@
+body {
+    font-family: "Inter";
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header nav {
+    height: 72px;
+    background-color: black;
+    border-bottom: solid red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav img {
+    height: 40px;
+    width: auto;
+}
+
+header nav div ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 64px;
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header nav .navigation_bar {
+    margin-left: 64px;
+    margin-right: 128px;
+}
+
+header nav .navigation_icons {
+    margin-left: auto;
+}
+
+header nav .navigation_icons ul li a {
+    display: flex;
+    fill: white;
+}
+
+header nav .navigation_icons ul li a:hover {
+    fill: red;
+}
+
+header nav .search_box {
+    flex: 1;
+    max-width: 480px;
+    min-width: 0;
+    padding-right: 32px;
+    position: relative;
+}
+
+header nav .search_bar {
+    margin: 0;
+    position: relative;
+}
+
+header nav .search_bar input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 0 48px 0 20px;
+    border: none;
+    border-radius: 100px;
+    font-size: 16px;
+    outline: none;
+}
+
+header nav .search_box .search_button {
+    position: absolute;
+    right: 44px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+header nav .search_box .search_button svg {
+    width: 18px;
+    height: 18px;
+    fill: black;
+}
+
+header nav .navigation_icons ul {
+    gap: 24px;
+    align-items: center;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header section#hero {
+    display: flex;
+    justify-content: start;
+    padding: 48px 128px;
+    align-items: center;
+    height: 800px;
+    background: linear-gradient(135deg, black 40%, #5c0000 100%);
+}
+
+header section#hero #popup {
+    width: 45%;
+}
+
+header section#hero #popup .title {
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+header section#hero #popup .subtitle {
+    color: white;
+    font-size: 40px;
+}
+
+header section#hero #popup .button {
+    background: linear-gradient(180deg, white, #c9c9c9);
+    color: black;
+    border: none;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 32px 64px;
+    border-radius: 24px;
+    display: block;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+
+header section#hero .slider {
+    position: relative;
+    width: 45%;
+    height: 480px;
+    margin-left: auto;
+    border: solid 2px red;
+    border-radius: 24px;
+    background: black;
+}
+
+header section#hero .slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+header section#hero .slider .slide.active {
+    opacity: 1;
+}
+
+header section#hero .slider .slide img {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+    color: white;
+}
+
+header section#hero .slider .slide p {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 24px 0 0;
+}
+
+header section#hero .slider .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+header section#hero .slider .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #555555;
+    cursor: pointer;
+}
+
+header section#hero .slider .dot.active {
+    background: red;
+}
+
+main section {
+    padding: 96px 128px;
+    color: white;
+}
+
+main section p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+    margin: 0;
+}
+
+main section .section_text {
+    margin-bottom: 48px;
+}
+
+.section_titles {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+main section#engines {
+    background: linear-gradient(180deg, black, #1a0000);
+}
+
+main section .engine_table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: solid 1px #5c0000;
+    border-radius: 24px;
+    overflow: hidden;
+    background: black;
+}
+
+main section .engine_table th,
+main section .engine_table td {
+    padding: 24px 32px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+}
+
+main section .engine_table th {
+    border-bottom: solid 2px red;
+}
+
+main section .engine_table td {
+    border-top: solid 1px #5c0000;
+    transition: background 0.2s;
+}
+
+main section .engine_table tbody tr:first-child td {
+    border-top: none;
+}
+
+main section .engine_table th:first-child,
+main section .engine_table td:first-child {
+    width: 20%;
+    font-weight: bold;
+}
+
+main section .engine_table td a {
+    margin-left: 8px;
+    color: red;
+}
+
+main section#why {
+    background: linear-gradient(180deg, #1a0000, black);
+}
+
+main section .why_row {
+    display: flex;
+    gap: 64px;
+    margin-top: 24px;
+}
+
+main section .why_title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main section .why_item {
+    flex: 1;
+    border-left: solid 4px red;
+    padding-left: 24px;
+}
+
+main section#visit {
+    text-align: center;
+    background: linear-gradient(135deg, black, #5c0000);
+}
+
+main section#visit .button {
+    background: linear-gradient(180deg, red, #a80000);
+    color: white;
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 24px 48px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+main section#games {
+    background: linear-gradient(180deg, #1a0000, black);
+}
+
+main section .game_row {
+    display: flex;
+    gap: 32px;
+}
+
+main section .game {
+    flex: 1;
+    margin: 0;
+    border: solid 1px #5c0000;
+    background: black;
+    border-radius: 20px;
+}
+
+main section .game img {
+    display: block;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+main section .game div{
+    padding: 24px;
+}
+
+main section .game div p:first-child {
+    font-weight: bold;
+}
+
+main section .game div p:last-child {
+    color: gray;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+footer {
+    padding: 32px 128px;
+    background: linear-gradient(180deg, #1a0000, black);
+    border-top: solid red;
+}
+
+footer .footer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer_top img {
+    height: 40px;
+    width: auto;
+}
+
+footer .footer_top ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .copyright {
+    color: gray;
+    font-size: 14px;
+    margin: 24px 0 0;
+}
+
+a,
+button,
+.game,
+.why_item,
+.dot,
+header nav .navigation_icons svg {
+    transition: color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s, fill 0.2s;
+}
+
+a:hover {
+    color: red;
+}
+
+header section#hero #popup .button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 24px rgba(255, 255, 255, 0.6);
+}
+
+main section#visit .button:hover {
+    background: linear-gradient(180deg, #ff3030, red);
+    color: white;
+    box-shadow: 0 0 24px red;
+}
+
+main section .game:hover {
+    border-color: red;
+    box-shadow: 0 0 24px rgba(255, 0, 0, 0.45);
+}
+
+main section .engine_table tbody tr:hover td {
+    background: #1a0000;
+}
+
+header section#hero .slider .dot:hover {
+    background: white;
+    box-shadow: 0 0 24px red;
+}
+
+@media (max-width: 1100px) {
+    header nav .navigation_bar {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    header section#hero {
+        padding: 48px 64px;
+    }
+
+    header section#hero #popup .title {
+        font-size: 56px;
+    }
+
+    header section#hero #popup .subtitle {
+        font-size: 28px;
+    }
+
+    header section#hero #popup .button {
+        font-size: 24px;
+        padding: 24px 48px;
+    }
+
+    header section#hero .slider {
+        height: 360px;
+    }
+
+    header nav div ul {
+        gap: 40px;
+    }
+
+    main section {
+        padding: 64px;
+    }
+
+    main section .game_row,
+    main section .why_row {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    footer {
+        padding: 32px 64px;
+    }
+}
+
+@media (max-width: 600px) {
+    header nav .navigation_bar {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    header section#hero {
+        flex-direction: column;
+        height: auto;
+        gap: 32px;
+        padding: 32px 16px;
+    }
+
+    header section#hero #popup {
+        width: 100%;
+    }
+
+    header section#hero #popup .title {
+        font-size: 36px;
+    }
+
+    header section#hero #popup .subtitle {
+        font-size: 18px;
+    }
+
+    header section#hero #popup .button {
+        font-size: 18px;
+        padding: 16px 32px;
+    }
+
+    header section#hero .slider {
+        width: 100%;
+        height: 260px;
+        margin-left: 0;
+    }
+
+    header nav div ul {
+        gap: 16px;
+    }
+
+    main section {
+        padding: 48px 16px;
+    }
+
+    main section .engine_table th,
+    main section .engine_table td {
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 24px 16px;
+    }
+
+    footer .footer_top {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
